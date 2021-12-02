@@ -47,7 +47,7 @@ public class TradeOrderAndHeirsTest {
     
     assertEquals("Die Bestellung(Einzeln) hat ein Gesamtgewicht von 0g und kostet 0PD.", to1.toString());
     to1.supplyOrder(new Anchovie(100, 200), BigDecimal.ONE);
-    assertEquals("Die Bestellung(Einzeln) hat ein Gesamtgewicht von 200g und kostet 1PD.", to1.toString());
+    assertEquals("Die Bestellung(Einzeln) hat ein Gesamtgewicht von 200g und kostet 200PD.", to1.toString());
   }
   
   @Test
@@ -85,7 +85,7 @@ public class TradeOrderAndHeirsTest {
     assertEquals("Die Bestellung(Zielgewicht: 100g) hat ein Gesamtgewicht von 0g und kostet 0PD.", to1.toString());
     
     to1.supplyOrder(new Anchovie(100, 200), BigDecimal.ONE);
-    assertEquals("Die Bestellung(Zielgewicht: 100g) hat ein Gesamtgewicht von 200g und kostet 1PD.", to1.toString());
+    assertEquals("Die Bestellung(Zielgewicht: 100g) hat ein Gesamtgewicht von 200g und kostet 200PD.", to1.toString());
   }
   
   @Test
